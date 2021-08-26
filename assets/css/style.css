@@ -124,23 +124,41 @@ html {
 #nav .down-icon {
     font-size: 14px;
 }
-
+#header .mobile-menu-btn ,
 #header .searchButton {
     float: right;
 
     padding: 0 21px ;
 }
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#header .menu-icon ,
 #header .search-icon {
     color: white;
     font-size: 20px ;
     line-height: 46px;
-    
 }
+
+
 #header .searchButton:hover {
     background-color:#f44336 ;
     cursor: pointer;
 }
+#header .mobile-menu-btn:hover {
+    background-color: rgb(111, 104, 104);
+}
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
+}
 
+
+
+ 
 
 /* Slider */
 
@@ -226,8 +244,6 @@ html {
 /* Tour-heading */
 #tour-section {
     background-color: #000;
-    max-height: 730px;
-    
 }
 
 #tour-section .tickets-list {
@@ -420,6 +436,7 @@ html {
 
 .contact-content {
     margin-top: 48px;
+    
 }
 
 .contact-infor {
